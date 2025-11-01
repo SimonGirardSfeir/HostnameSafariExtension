@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5C0737F12EB6520F0087D528 /* FirstExtension Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5C0737F02EB6520F0087D528 /* FirstExtension Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5CA165602EB6787000EE6512 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5CA1655F2EB6787000EE6512 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		5C0737DA2EB6520F0087D528 /* FirstExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C0737E42EB6520F0087D528 /* FirstExtensionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstExtensionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C0737F02EB6520F0087D528 /* FirstExtension Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FirstExtension Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CA1655F2EB6787000EE6512 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -63,11 +65,29 @@
 			);
 			target = 5C0737EF2EB6520F0087D528 /* FirstExtension Extension */;
 		};
+		5C0738192EB671670087D528 /* Exceptions for "FirstExtension" folder in "FirstExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/FirstExtensionTests.swift,
+			);
+			target = 5C0737BF2EB6520E0087D528 /* FirstExtension */;
+		};
+		5C07381A2EB671670087D528 /* Exceptions for "FirstExtension" folder in "FirstExtensionTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/FirstExtensionTests.swift,
+			);
+			target = 5C0737D92EB6520F0087D528 /* FirstExtensionTests */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5C0737C22EB6520E0087D528 /* FirstExtension */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5C0738192EB671670087D528 /* Exceptions for "FirstExtension" folder in "FirstExtension" target */,
+				5C07381A2EB671670087D528 /* Exceptions for "FirstExtension" folder in "FirstExtensionTests" target */,
+			);
 			path = FirstExtension;
 			sourceTree = "<group>";
 		};
@@ -130,6 +150,7 @@
 		5C0737B72EB6520E0087D528 = {
 			isa = PBXGroup;
 			children = (
+				5CA1655F2EB6787000EE6512 /* README.md */,
 				5C0737C22EB6520E0087D528 /* FirstExtension */,
 				5C0737DD2EB6520F0087D528 /* FirstExtensionTests */,
 				5C0737E72EB6520F0087D528 /* FirstExtensionUITests */,
@@ -297,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CA165602EB6787000EE6512 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +413,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -426,7 +448,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -585,6 +607,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -626,6 +649,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
